@@ -1,4 +1,6 @@
-﻿namespace MAUI_Sample_Proyects
+﻿using MAUI_Sample_Proyects.Perfect_Pay;
+
+namespace MAUI_Sample_Proyects
 {
     public partial class App : Application
     {
@@ -9,7 +11,7 @@
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new AppShell());
+            return new Window(new PerfectPay());
         }
     }
 }
