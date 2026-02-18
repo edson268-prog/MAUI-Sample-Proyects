@@ -1,4 +1,4 @@
-﻿using MAUI_Sample_Proyects.Perfect_Pay;
+﻿using MAUI_Sample_Proyects.ExternalResources;
 
 namespace MAUI_Sample_Proyects
 {
@@ -11,7 +11,7 @@ namespace MAUI_Sample_Proyects
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new PerfectPay());
+            return new Window(new ExternalResources.ExternalResources());
         }
     }
 }
