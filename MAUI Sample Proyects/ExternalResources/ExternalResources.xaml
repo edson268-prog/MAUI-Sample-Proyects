@@ -4,9 +4,28 @@
              x:Class="MAUI_Sample_Proyects.ExternalResources.ExternalResources"
              Title="ExternalResources">
 
-    <Grid BackgroundColor="Black">
-        <!--<Image Source="mario.png"/>-->
+    <!--<Grid BackgroundColor="Black">
+        --><!--<Image Source="mario.png"/>--><!--
         <Image Source="homero.gif" IsAnimationPlaying="True"/>
-        <!--<Image Source="alien"/>-->
-    </Grid>
+        --><!--<Image Source="alien"/>--><!--
+    </Grid>-->
+
+    <StackLayout BackgroundColor="Black">
+        <Label FontSize="50"
+               FontAttributes="Bold,Italic"
+               FontFamily="IronMaiden"
+               Text="This is a test font"
+               TextColor="White"/>
+        <Label FontSize="50"
+               Text="This is a test font"
+               TextColor="White"/>
+
+        <!--<Image>
+            <Image.Source>
+                <FontImageSource FontFamily="Icons"
+                                 Glyph="&#xF1E6;"
+                                 Size="50"/>
+            </Image.Source>
+        </Image>-->
+    </StackLayout>
 </ContentPage>
