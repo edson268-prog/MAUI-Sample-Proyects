@@ -66,6 +66,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<MauiXaml Update="Code Quotes\CodeQuotes.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 		<MauiXaml Update="ExternalResources\ExternalResources.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
@@ -73,6 +76,9 @@
 			<Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
 		<MauiXaml Update="ExternalResources\ExternalResources.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Code Quotes\CodeQuotes.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
 	</ItemGroup>

@@ -15,6 +15,7 @@ namespace MAUI_Sample_Proyects
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                     fonts.AddFont("maiden.TTF", "IronMaiden");
                     fonts.AddFont("fontello.ttf", "Icons");
+                    fonts.AddFont("Bison.ttf", "BisonFont");
                 });
 
 #if DEBUG
