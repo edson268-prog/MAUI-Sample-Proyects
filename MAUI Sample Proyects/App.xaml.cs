@@ -1,5 +1,6 @@
 ﻿using MAUI_Sample_Proyects.Code_Quotes;
 using MAUI_Sample_Proyects.ExternalResources;
+using MAUI_Sample_Proyects.Pages;
 
 namespace MAUI_Sample_Proyects
 {
@@ -12,7 +13,7 @@ namespace MAUI_Sample_Proyects
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new CodeQuotes());
+            return new Window(new MainPage());
         }
     }
 }

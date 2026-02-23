@@ -72,6 +72,12 @@
 		<MauiXaml Update="ExternalResources\ExternalResources.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
+		<MauiXaml Update="Pages\BindingModes.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Pages\SliderPage.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 		<MauiXaml Update="Perfect Pay\PerfectPay.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
