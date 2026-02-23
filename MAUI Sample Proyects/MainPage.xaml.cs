@@ -1,24 +1,49 @@
-﻿namespace MAUI_Sample_Proyects
+﻿using MAUI_Sample_Proyects.Models;
+using System.ComponentModel;
+
+namespace MAUI_Sample_Proyects
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        Person person = new Person();
 
         public MainPage()
         {
             InitializeComponent();
+
+            person = new Person
+            {
+                Name = "Edson",
+                Phone = "9999",
+                Address = "X Address"
+            };
+
+            BindingContext = person;
         }
 
         private void OnCounterClicked(object? sender, EventArgs e)
         {
-            count++;
+            person.Name = "Peter";
+            person.Phone = "0000";
+            person.Address = "New Address";
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+            //person = new Person
+            //{
+            //    Name = "Peter",
+            //    Phone = "0000",
+            //    Address = "New Address"
+            //};
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            //txtName.BindingContext = person;
+            //      txtName.SetBinding(Label.TextProperty, "Name");
+
+            //Binding personBinding =
+            //  new Binding();
+
+            //personBinding.Source = person;
+            //personBinding.Path = "Name";
+
+            //txtName.SetBinding(Label.TextProperty, personBinding);
         }
     }
 }
